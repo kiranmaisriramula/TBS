@@ -5,6 +5,8 @@ import './App.css';
 import Appbar from "./components/Appbar";
 import Drawer from "./components/Navbar";
 import Home from "./Home";
+import Imagecard from "./components/Imagecard";
+import Search from "./components/Search";
 
 const drawerWidth = 100;
 
@@ -38,6 +40,8 @@ class App extends React.Component {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <Home />
+          <Search />
+          <Imagecard />
      </main>
       </div>
     );

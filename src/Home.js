@@ -14,27 +14,34 @@ class Home extends React.Component {
                 container
                 spacing={4}
                 direction="row"
-                justify="flex-start"
+                justify="space-between"
                 alignItems="flex-start"
             >
+                <Grid item
+                    container
+                >
 
-                <Grid item xs={2}>
-                    <Select />
+                    <Grid item>
+                        <Select />
+                    </Grid>
+                    <Grid item>
+                        <Calendar />
+                    </Grid>
+                    <Grid item xs={1}>
+                        <Button variant="contained">Week</Button>
+                    </Grid>
+                    <Grid item xs={2}>
+                        <Button variant="contained">Today</Button>
+                    </Grid>
                 </Grid>
-                <Grid item xs={2}>
-                    <Calendar />
-                </Grid>
-                <Grid item xs={1}>
-                    <Button variant="contained">Week</Button>
-                </Grid>
-                <Grid item xs={4}>
-                    <Button variant="contained">Today</Button>
-                </Grid>
-                <Grid item xs={1}>
-                    <Button variant="contained"><SendIcon />Export</Button>
-                </Grid>
-                <Grid item xs={1}>
-                    <Button variant="contained"><SaveIcon />Save</Button>
+                <Grid item
+                    container>
+                    <Grid item xs={1}>
+                        <Button variant="contained"><SendIcon />Export</Button>
+                    </Grid>
+                    <Grid item xs={1}>
+                        <Button variant="contained"><SaveIcon />Save</Button>
+                    </Grid>
                 </Grid>
             </Grid>
 
